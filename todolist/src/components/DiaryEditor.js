@@ -11,6 +11,7 @@ const DiaryParent = styled.div`
   border: 3px solid white;
   border-radius: 10px;
   background-color: white;
+  color: #555;
   & > h2 {
     color: #555;
     font-size: 1.5rem;
@@ -133,6 +134,7 @@ const DiaryEditor = ({ onCreate }) => {
         onChange={handleChangeState}
         placeholder="일기 내용"
       ></textarea>
+      감정상태(기분좋음 /5 → 1/ 기분나쁨)
       <select name="emotion" value={state.emotion} onChange={handleChangeState}>
         <option value={1}>1</option>
         <option value={2}>2</option>
